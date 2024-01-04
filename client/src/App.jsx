@@ -6,13 +6,14 @@ import LeftBar from "./components/left-bar/LeftBar"
 import RightBar from "./components/right-bar/RightBar"
 import Home from "./pages/home/Home"
 import Profile from "./pages/profile/Profile"
+import "./style.scss"
 
 const App = () => {
   const currentUser = true
 
   const Layout = () => {
     return (
-      <div>
+      <div className="theme-dark">
         <NavBar />
         <div style={{ display: "flex" }}>
           <LeftBar />
