@@ -12,8 +12,7 @@ import { DarkModeContext } from "./context/darkModeContext"
 import { AuthContext } from "./context/authContext"
 
 const App = () => {
-  // const {currentUser} = useContext(AuthContext)
-  const currentUser = true
+  const {currentUser} = useContext(AuthContext)
   const {darkMode} = useContext(DarkModeContext)
 
   const Layout = () => {
